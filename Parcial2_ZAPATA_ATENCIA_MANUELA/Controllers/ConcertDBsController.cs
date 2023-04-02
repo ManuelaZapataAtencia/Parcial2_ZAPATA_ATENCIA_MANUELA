@@ -56,7 +56,7 @@ namespace Parcial2_ZAPATA_ATENCIA_MANUELA.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IsUsed,EntranceGate,Id,UseDate")] ConcertDB concertDB)
+        public async Task<IActionResult> Create (ConcertDB concertDB)
         {
             if (ModelState.IsValid)
             {
@@ -89,7 +89,7 @@ namespace Parcial2_ZAPATA_ATENCIA_MANUELA.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("IsUsed,EntranceGate,Id,UseDate")] ConcertDB concertDB)
+        public async Task<IActionResult> Edit(Guid id, ConcertDB concertDB)
         {
             if (id != concertDB.Id)
             {

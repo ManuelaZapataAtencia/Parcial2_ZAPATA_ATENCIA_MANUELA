@@ -4,6 +4,7 @@ namespace Parcial2_ZAPATA_ATENCIA_MANUELA.DAL.Entities
 {
     public class ConcertDB : Entity
     {
+      
         [Display(Name = "¿Ya fue usada la boleta?")]
         public bool IsUsed { get; set; } = false;
 

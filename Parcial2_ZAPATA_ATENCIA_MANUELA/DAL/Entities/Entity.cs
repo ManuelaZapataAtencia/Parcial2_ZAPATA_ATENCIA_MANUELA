@@ -12,5 +12,8 @@ namespace Parcial2_ZAPATA_ATENCIA_MANUELA.DAL.Entities
 
         [Display(Name = "Fecha de uso de la boleta")]
         public DateTime? UseDate { get; set; }
+
+        
+
     }
 }
