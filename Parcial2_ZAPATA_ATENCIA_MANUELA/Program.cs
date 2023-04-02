@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using Parcial2_ZAPATA_ATENCIA_MANUELA.DAL;
+using System.Reflection.Emit;
+
 namespace Parcial2_ZAPATA_ATENCIA_MANUELA
 {
     public class Program
@@ -8,6 +12,11 @@ namespace Parcial2_ZAPATA_ATENCIA_MANUELA
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<DataBaseContext>(o =>
+            {
+                o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+            });
 
             var app = builder.Build();
 
