@@ -12,5 +12,7 @@ namespace Parcial2_ZAPATA_ATENCIA_MANUELA.DAL.Entities
         [MaxLength(10)]
         public string? EntranceGate { get; set; }
 
+       
+
     }
 }

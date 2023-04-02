@@ -14,6 +14,6 @@ namespace Parcial2_ZAPATA_ATENCIA_MANUELA.DAL.Entities
         public DateTime? UseDate { get; set; }
 
         
-
+       
     }
 }
